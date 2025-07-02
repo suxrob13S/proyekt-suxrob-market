@@ -25,19 +25,14 @@
     gap: 5px;
 }
 
-.imgwrap {
-    box-sizing: border-box;
-    padding: 20px;
-    width: 35%;
-    height:70vh;
-    padding: 100px 10px ;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+.imgwrap{
+    width: 40%;
 }
 
 .image {
-    width: 87%;
+    width:80%;
+    margin: auto;
+    
 }
 
 
