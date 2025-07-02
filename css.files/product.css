@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+
+.div {
+    padding: 40px;
+    width: 60%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+.imgwrap {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 35%;
+    height:70vh;
+    padding: 100px 10px ;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+.image {
+    width: 87%;
+}
+
+
+.id {
+    font-size: 20px;
+    font-weight: 650;
+    margin-top: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.price {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(160, 11, 155);
+}
+
+.descraption {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.category {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.rating {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 650;
+}
+
+.count {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 650;
+}

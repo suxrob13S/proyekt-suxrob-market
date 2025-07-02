@@ -7,6 +7,13 @@ fetch("https://fakestoreapi.com/products").then(the => the.json()).then(data => 
     for (let i = 0; i < data.length; i++) {
         const div = document.createElement('div')
         div.className = 'div'
+
+        const image = document.createElement('img')
+        image.src = data[i].image
+        image.className = 'image'
+        div.append(image)
+
+
         const id = document.createElement('p')
         id.innerHTML = 'id:' + data[i].id
         id.className = 'id'
@@ -26,9 +33,11 @@ fetch("https://fakestoreapi.com/products").then(the => the.json()).then(data => 
 
 
         const descraption = document.createElement('p')
-        descraption.innerHTML = 'Descraption:' + data[i].descraption
+        descraption.innerHTML = 'Descraption:' + data[i].description
         descraption.className = 'descraption'
         div.append(descraption)
+
+
 
 
         const category = document.createElement('p')
@@ -37,19 +46,31 @@ fetch("https://fakestoreapi.com/products").then(the => the.json()).then(data => 
         div.append(category)
 
 
-        const image = document.createElement('img')
-        image.src = data[i].image
-        image.className = 'image'
-        div.append(image)
 
-        const rating = document.createElement('p')
-        rating.innerHTML = data[i].rating.rate
-        rating.className = 'rating'
-        div.append(rating[i])
+
+        const rate = document.createElement('p')
+        rate.innerHTML = data[i].rating.rate
+        rate.className = 'rating'
+        div.append(rate)
 
         const count = document.createElement('p')
-        rating.innerHTML = data[i].rating.count
-        rating.className = 'count'
-        div.append(rating)
+        count.innerHTML = data[i].rating.count
+        count.className = 'count'
+        div.append(count)
+
+
+        const btn = document.createElement('button')
+        btn.className = 'btn'
+        btn.innerHTML = 'Leran more'
+        div.append(btn)
+
+
+        btn.addEventListener('click',()=>{
+            window.location.href = "product.html?id=" + data[i].id
+        })
     }
+
+
+
+
 })
