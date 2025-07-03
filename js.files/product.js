@@ -3,22 +3,29 @@ const imgwrap = document.getElementById('imgwrap')
 const params = new URLSearchParams(window.location.search)
 const idE = params.get("id")
 fetch("https://fakestoreapi.com/products/" + idE).then(the => the.json()).then(data => {
-    const div = document.createElement('div')
-    div.className = 'div'
 
+
+
+    const DIV = document.createElement('div')
+    DIV.classList.add("wrapper")
+    body.append(DIV)
 
     const image = document.createElement('img')
     image.src = data.image
     image.className = 'image'
     imgwrap.append(image)
+    DIV.append(imgwrap)
 
+    const div = document.createElement('div')
+    div.className = 'div'
+    DIV.append(div)
 
 
     const id = document.createElement('p')
     id.innerHTML = 'id:' + data.id
     id.className = 'id'
     div.append(id)
-    body.append(div)
+
 
     const title = document.createElement('p')
     title.innerHTML = 'Title:' + data.title

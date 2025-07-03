@@ -2,7 +2,7 @@ const wrapper = document.getElementById('wrapper')
 
 fetch("https://fakestoreapi.com/products").then(the => the.json()).then(data => {
 
-
+    
 
     for (let i = 0; i < data.length; i++) {
         const div = document.createElement('div')
@@ -31,32 +31,11 @@ fetch("https://fakestoreapi.com/products").then(the => the.json()).then(data => 
         price.className = 'price'
         div.append(price)
 
-
-        const descraption = document.createElement('p')
-        descraption.innerHTML = 'Descraption:' + data[i].description
-        descraption.className = 'descraption'
-        div.append(descraption)
-
-
-
-
         const category = document.createElement('p')
         category.innerHTML = 'Category:' + data[i].category
         category.className = 'category'
         div.append(category)
 
-
-
-
-        const rate = document.createElement('p')
-        rate.innerHTML = data[i].rating.rate
-        rate.className = 'rating'
-        div.append(rate)
-
-        const count = document.createElement('p')
-        count.innerHTML = data[i].rating.count
-        count.className = 'count'
-        div.append(count)
 
 
         const btn = document.createElement('button')
